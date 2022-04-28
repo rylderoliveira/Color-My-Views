@@ -64,4 +64,66 @@
         app:layout_constraintStart_toEndOf="@id/box_two"
         app:layout_constraintEnd_toEndOf="parent"/>
 
+    <TextView
+        android:id="@+id/how_to_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/how_to_play"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/box_two"
+        app:layout_constraintVertical_bias="0.25"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/click_the_views"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/click_the_views"
+        app:layout_constraintBaseline_toBaselineOf="@+id/how_to_play"
+        app:layout_constraintStart_toEndOf="@+id/how_to_play"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"/>
+
+    <Button
+        android:id="@+id/button_red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/red"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/how_to_play"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_yellow"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintVertical_bias="1"
+        android:background="@color/red"
+        android:backgroundTint="@color/red"/>
+
+    <Button
+        android:id="@+id/button_yellow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/yellow"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button_red"
+        app:layout_constraintStart_toEndOf="@+id/button_red"
+        app:layout_constraintEnd_toStartOf="@+id/button_blue"
+        android:background="@color/yellow"
+        android:backgroundTint="@color/yellow"/>
+
+    <Button
+        android:id="@+id/button_blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="@color/blue"
+        android:backgroundTint="@color/blue"
+        android:text="@string/blue"
+        android:textColor="#E1F5FE"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button_red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_yellow" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
